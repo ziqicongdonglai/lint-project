@@ -31,6 +31,7 @@
 </template>
 
 <script>
+import axios from 'axios'
 export default {
   name: 'HotView',
   data() {
@@ -41,7 +42,7 @@ export default {
     }
   },
   mounted() {
-    this.getList()
+    this.getListMock()
     // window.addEventListener('scroll', this.handleScroll)
   },
   methods: {
@@ -49,6 +50,17 @@ export default {
       const l = str.replace(/[\u0391-\uFFE5]/g, 'aa').length
       if (l > 130) return str.substring(0, 130) + '...'
       return str
+    },
+    getListMock() {
+      axios
+        .get('http://localhost/api/Hot')
+        .then((res) => {
+          console.log(res)
+          this.hotList = res.data.data
+        })
+        .catch((e) => {
+          console.log(e)
+        })
     },
     getList() {
       this.hotList = [
