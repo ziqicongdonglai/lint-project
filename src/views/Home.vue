@@ -29,15 +29,15 @@ export default {
   display: flex;
   width: 100%;
   background-color: $bgColor;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 0.01rem solid #ddd;
   align-items: center;
 }
 
 a {
   color: $content-fontcolor;
   text-decoration: none;
-  font-size: 16px;
-  padding: 20px;
+  font-size: 0.16rem;
+  padding: 0.2rem;
   text-align: center;
 }
 
@@ -52,8 +52,8 @@ a:hover {
 .content {
   flex: 1;
   background-color: $bgColor;
-  padding: 20px;
+  padding: 0.2rem;
   box-sizing: border-box;
-  border-radius: 0 0 5px 5px;
+  border-radius: 0 0 0.05rem 0.05rem;
 }
 </style>

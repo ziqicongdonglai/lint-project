@@ -49,7 +49,7 @@ export default {
 @import '../style/virables.scss';
 .nav {
   background-color: $bgColor;
-  box-shadow: 0 1px 3px rgb(18 18 18 / 10%);
+  box-shadow: 0 0.01rem 0.03rem rgb(18 18 18 / 10%);
 }
 .wrap {
   display: flex;
@@ -62,9 +62,9 @@ export default {
 a {
   color: #8590a6;
   text-decoration: none;
-  font-size: 16px;
-  padding: 15px 0;
-  margin: 0 15px;
+  font-size: 0.16rem;
+  padding: 0.15rem 0;
+  margin: 0 0.15rem;
   position: relative;
 }
 
@@ -83,14 +83,14 @@ a:hover {
   width: 100%;
   left: 0;
   bottom: 0;
-  border-bottom: 5px solid $active-color;
+  border-bottom: 0.05rem solid $active-color;
 }
 
 .main {
   display: flex;
   width: 73%;
   margin: 0 auto;
-  padding: 10px;
+  padding: 0.1rem;
 }
 
 .container {
@@ -102,7 +102,7 @@ a:hover {
 .right {
   flex: 1;
   background-color: $bgColor;
-  margin-left: 10px;
-  border-radius: 3px;
+  margin-left: 0.1rem;
+  border-radius: 0.03rem;
 }
 </style>
