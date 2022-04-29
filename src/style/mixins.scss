@@ -1,0 +1,12 @@
+@mixin ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+@mixin check-btn {
+  width: 0.98rem;
+  background-color: $btn-light-bgColor;
+  text-align: center;
+  font-size: 0.14rem;
+  color: $bgColor;
+}

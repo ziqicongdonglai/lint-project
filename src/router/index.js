@@ -61,7 +61,7 @@ const routes = [
           },
           {
             path: 'article/:id?',
-            name: 'Article',
+            name: 'ArticleView',
             component: Article
           },
           {
@@ -72,30 +72,30 @@ const routes = [
         ]
       },
       {
-        path: 'about',
-        name: 'about',
+        path: 'memebr',
+        name: 'MemberView',
         component: Member
       },
       {
         path: 'zhihu.com/question/:id?',
-        name: 'question',
+        name: 'QuestionView',
         component: Question
       },
       {
         path: 'find',
-        name: 'Find',
+        name: 'FindView',
         component: Find
       },
       {
         path: 'wait',
-        name: 'wait',
+        name: 'WaitView',
         component: Wait
       }
     ]
   },
   {
     path: '/login',
-    name: 'login',
+    name: 'LoginView',
     component: Login
   }
 ]
