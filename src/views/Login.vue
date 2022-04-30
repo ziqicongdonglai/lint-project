@@ -225,6 +225,7 @@
 </template>
 
 <script>
+import { post } from '../utils/request'
 export default {
   name: 'LoginView',
   data() {
@@ -235,7 +236,13 @@ export default {
   },
   methods: {
     goHome() {
-      this.$router.replace('/')
+      post('/user/login', {
+        username: this.username,
+        password: this.password
+      }).then((result) => {
+        this.$store.commit('login', result.data)
+        this.$router.replace('/')
+      })
     }
   }
 }
