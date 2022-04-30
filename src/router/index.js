@@ -15,6 +15,7 @@ const Follow = () => import('../views/Follow')
 const Recommend = () => import('../views/Recommend')
 const Hot = () => import('../views/Hot')
 const ZVideo = () => import('../views/ZVideo')
+const Vids = () => import('../views/Vids')
 
 Vue.use(VueRouter)
 
@@ -90,6 +91,11 @@ const routes = [
         path: 'wait',
         name: 'WaitView',
         component: Wait
+      },
+      {
+        path: 'vids/:id',
+        name: 'videoS',
+        component: Vids
       }
     ]
   },
